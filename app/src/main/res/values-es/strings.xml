@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="enter_amount">Ingrese monto a pagar</string>
+    <string name="next">Siguiente</string>
+    <string name="back">Volver</string>
+    <string name="pay">Pagar</string>
+    <string name="payment_method">Medio de Pago</string>
+    <string name="select_bank">Seleccine banco</string>
+    <string name="select_installments">Seleccione número de cuotas</string>
+
+    <string name="confirm_payment">Confirmar Pago</string>
+    <string name="amount_to_pay_">Monto a pagar: %.2f</string>
+    <string name="payment_method_">Medio de pago: %s</string>
+    <string name="bank_">Banco: %s</string>
+    <string name="installments_">Cuotas: %s</string>
+    <string name="payment_successful">Pago Exitoso</string>
+    <string name="payment_completed">Tu pago de $%.2f fue realizado correctamente</string>
+    <string name="exit">Salir</string>
+
+    <string name="error_enter_valid_amount">Debes ingresar un mónto válido</string>
+    <string name="error_select_payment_method">Debes seleccionar un método de pago</string>
+
+</resources>

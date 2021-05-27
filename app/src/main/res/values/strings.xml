@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name" translatable="false">PaymentApp</string>
+
+    <string name="hint_number_input" translatable="false">100.00</string>
+    <string name="enter_amount">Enter amount to pay</string>
+    <string name="next">Next</string>
+    <string name="back">Back</string>
+    <string name="pay">Pay</string>
+    <string name="payment_method">Payment Method</string>
+    <string name="select_bank">Select Bank</string>
+    <string name="select_installments">Select Installments</string>
+
+    <string name="confirm_payment">Confirm Payment</string>
+    <string name="amount_to_pay_">Amount to pay: %.2f</string>
+    <string name="payment_method_">Payment method: %s</string>
+    <string name="bank_">Bank: %s</string>
+    <string name="installments_">Installments: %s</string>
+    <string name="payment_successful">Payment Successful</string>
+    <string name="payment_completed">Your payment of $%.2f was successfully completed</string>
+    <string name="exit">Exit</string>
+
+    <string name="error_enter_valid_amount">Enter a valid amount</string>
+    <string name="error_select_payment_method">Select a payment method</string>
+
+</resources>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/amountFragment">
+
+    <fragment
+        android:id="@+id/amountFragment"
+        android:name="com.andresgarrido.paymentapp.ui.main.fragments.AmountFragment"
+        android:label="fragment_overview"
+        tools:layout="@layout/fragment_amount" >
+        <action
+            android:id="@+id/action_amountFragment_to_paymentMethodFragment"
+            app:destination="@id/paymentMethodFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/paymentMethodFragment"
+        android:name="com.andresgarrido.paymentapp.ui.main.fragments.PaymentMethodFragment"
+        android:label="PaymentMethodFragment"
+        tools:layout="@layout/fragment_payment_method" >
+        <action
+            android:id="@+id/action_paymentMethodFragment_to_amountFragment"
+            app:destination="@id/amountFragment" />
+        <action
+            android:id="@+id/action_paymentMethodFragment_to_bankFragment"
+            app:destination="@id/bankFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/bankFragment"
+        android:name="com.andresgarrido.paymentapp.ui.main.fragments.BankFragment"
+        android:label="BankFragment"
+        tools:layout="@layout/fragment_bank">
+        <action
+            android:id="@+id/action_bankFragment_to_paymentMethodFragment"
+            app:destination="@id/paymentMethodFragment" />
+        <action
+            android:id="@+id/action_bankFragment_to_installmentsFragment"
+            app:destination="@id/installmentsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/installmentsFragment"
+        android:name="com.andresgarrido.paymentapp.ui.main.fragments.InstallmentsFragment"
+        android:label="InstallmentsFragment"
+        tools:layout="@layout/fragment_installments" >
+        <action
+            android:id="@+id/action_installmentsFragment_to_bankFragment"
+            app:destination="@id/bankFragment" />
+        <action
+            android:id="@+id/action_installmentsFragment_to_summaryFragment"
+            app:destination="@id/summaryFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/summaryFragment"
+        android:name="com.andresgarrido.paymentapp.ui.main.fragments.SummaryFragment"
+        android:label="SummaryFragment"
+        tools:layout="@layout/fragment_summary">
+        <action
+            android:id="@+id/action_summaryFragment_to_installmentsFragment"
+            app:destination="@id/installmentsFragment" />
+        <action
+            android:id="@+id/action_summaryFragment_to_paymentEndFragment"
+            app:destination="@id/paymentEndFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/paymentEndFragment"
+        android:name="com.andresgarrido.paymentapp.ui.main.fragments.PaymentEndFragment"
+        android:label="PaymentEndFragment" />
+</navigation>
